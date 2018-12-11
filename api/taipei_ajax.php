@@ -2,6 +2,9 @@
      include 'DBConnection_mongo.php';
     $raw_post_data = json_decode(file_get_contents('php://input'), true);
     
+    // 資料表
+    $collection = 'scheduled';
+
     $kind = 'list';
     $date =  "";
     $time = "";
@@ -10,7 +13,8 @@
     $location = "";
     $id =  $raw_post_data['id'];
     $today = date("Y-m-d H:i:s");
-    $date = date("Y-m-d");
+    $date_now = date("Y-m-d");
+    $date_tomorrow = date("Y-m-d", strtotime(".$date_now. +1 day"));
     $latitude = "";
     $longitude = "";
     switch ($id) {
@@ -72,7 +76,7 @@
         'location'      => $location,
         'latitude'      => $latitude,
         'longitude'     => $longitude,
-        'date'          => $date,
+        'date'          => $date_tomorrow,
         'time'          => $time,
         'status'        => 0,
         'kind'          => $kind,
