@@ -1,110 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="assets/js/axios.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <!--
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <title>台北</title>
-</head>
+  </head>
 
-<body id="top">
+  <body id="top">
     <section id="banner" data-video="images/banner">
-        <div class="inner">
-            <header>
-                <h1 style="font-family: '微軟正黑體'">臺北活動一覽表</h1>
-                <p>你可以利用底下的按鈕，加進您Urban Diary的待辦事項裡，</p>
-            </header>
-            <a href="#main" class="more">Add to Urban Diary</a>
-        </div>
+      <div class="inner">
+        <header>
+          <h1 style="font-family: '微軟正黑體'">臺北活動一覽表</h1>
+          <p>你可以利用底下的按鈕，加進您Urban Diary的待辦事項裡，</p>
+        </header>
+        <a href="#main" class="more">Add to Urban Diary</a>
+      </div>
     </section>
 
     <div id="main">
-        <div id="inner">
-            <div class="thumbnails">
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active1.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>2018臺北周末音樂不斷電</h3>
-                        <h5>2018.10.27&nbsp;&nbsp;&nbsp;松山文創園區文創大街</h5>
-                        <p id="active1">本活動為透過提供音樂創作人發表平台，讓新興音樂人有機會直接面對觀眾/市場。</p>
-                        <a></a>
-                        <a id="t1" href="javascript: send_ajax('t1');" class="button fit">Add to Urban Diary</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active2.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>2018臺北溫泉季</h3>
-                        <h5>2018.10.31&nbsp;&nbsp;&nbsp;臺北市北投區北投溫泉博物館</h5>
-                        <p id="active2">邁入第17年的2018臺北溫泉季，今年主題為名湯海灣宴-潑湯祈福祭り。</p>
-                        <a></a>
-                        <a id="t2" href="javascript: send_ajax('t2');" class="button style2 fit">Add to Urban Diary</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active3.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>關渡國際自然藝術季</h3>
-                        <h5>2018.11.1&nbsp;&nbsp;&nbsp;臺北市北投區關渡自然公園</h5>
-                        <p id="active3">透過自然藝術家與素人合作，以環保素材、自然環境及裝置藝術的結合。</p>
-                        <a></a>
-                        <a id="t3" href="javascript: send_ajax('t3');" class="button style3 fit">Add to Urban Diary</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active4.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>2018臺北海碩盃國際女子網球挑戰賽</h3>
-                        <h5>2018.11.11&nbsp;&nbsp;&nbsp;臺北市松山區臺北小巨蛋</h5>
-                        <p id="active4">迄今已邁入第12年，成為臺灣年度重要且具代表性的國際性女子網球賽事。</p>
-                        <a></a>
-                        <a id="t4" href="javascript: send_ajax('t4');" class="button style2 fit">Add to Urban Diary</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active5.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>2018士林官邸菊展</h3>
-                        <h5>2018.11.30&nbsp;&nbsp;&nbsp;臺北市士林區士林官邸公園</h5>
-                        <p id="active5">士林官邸菊展為臺北秋季最大菊花展。</p>
-                        <a></a>
-                        <a id="t5" href="javascript: send_ajax('t5');" class="button style3 fit">Add to Urban Diary</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <a class="image fit"><img src="images/active6.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h3>2018臺北馬拉松</h3>
-                        <h5>2018.12.9&nbsp;&nbsp;&nbsp;臺北市信義區市民廣場</h5>
-                        <p id="active6">臺北馬拉松吸引來自全球與國內路跑菁英齊聚一堂，儼然已為臺灣年度最具指標性與壓軸馬拉松賽事。</p>
-                        <a></a>
-                        <a id="t6" href="javascript: send_ajax('t6');" class="button fit">Add to Urban
-                            Diary</a>
-                    </div>
-                </div>
-
+      <div id="inner">
+        <div class="thumbnails">
+          <div class="box">
+            <a class="image fit"><img src="images/active1.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>2018臺北周末音樂不斷電</h3>
+              <h5>2018.12.27&nbsp;&nbsp;&nbsp;松山文創園區文創大街</h5>
+              <p id="active1">
+                本活動為透過提供音樂創作人發表平台，讓新興音樂人有機會直接面對觀眾/市場。
+              </p>
+              <a></a>
+              <a id="t1" href="javascript: send_ajax('t1');" class="button fit"
+                >Add to Urban Diary</a
+              >
             </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit"><img src="images/active2.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>2018臺北溫泉季</h3>
+              <h5>2018.12.31&nbsp;&nbsp;&nbsp;臺北市北投區北投溫泉博物館</h5>
+              <p id="active2">
+                邁入第17年的2018臺北溫泉季，今年主題為名湯海灣宴-潑湯祈福祭り。
+              </p>
+              <a></a>
+              <a
+                id="t2"
+                href="javascript: send_ajax('t2');"
+                class="button style2 fit"
+                >Add to Urban Diary</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit"><img src="images/active3.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>關渡國際自然藝術季</h3>
+              <h5>2018.12.1&nbsp;&nbsp;&nbsp;臺北市北投區關渡自然公園</h5>
+              <p id="active3">
+                透過自然藝術家與素人合作，以環保素材、自然環境及裝置藝術的結合。
+              </p>
+              <a></a>
+              <a
+                id="t3"
+                href="javascript: send_ajax('t3');"
+                class="button style3 fit"
+                >Add to Urban Diary</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit"><img src="images/active4.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>2018臺北海碩盃國際女子網球挑戰賽</h3>
+              <h5>2018.12.25&nbsp;&nbsp;&nbsp;臺北市松山區臺北小巨蛋</h5>
+              <p id="active4">
+                迄今已邁入第12年，成為臺灣年度重要且具代表性的國際性女子網球賽事。
+              </p>
+              <a></a>
+              <a
+                id="t4"
+                href="javascript: send_ajax('t4');"
+                class="button style2 fit"
+                >Add to Urban Diary</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit"><img src="images/active5.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>2018士林官邸菊展</h3>
+              <h5>2018.12.16&nbsp;&nbsp;&nbsp;臺北市士林區士林官邸公園</h5>
+              <p id="active5">士林官邸菊展為臺北秋季最大菊花展。</p>
+              <a></a>
+              <a
+                id="t5"
+                href="javascript: send_ajax('t5');"
+                class="button style3 fit"
+                >Add to Urban Diary</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <a class="image fit"><img src="images/active6.jpg" alt=""/></a>
+            <div class="inner">
+              <h3>2018臺北馬拉松</h3>
+              <h5>2018.12.29&nbsp;&nbsp;&nbsp;臺北市信義區市民廣場</h5>
+              <p id="active6">
+                臺北馬拉松吸引來自全球與國內路跑菁英齊聚一堂，儼然已為臺灣年度最具指標性與壓軸馬拉松賽事。
+              </p>
+              <a></a>
+              <a id="t6" href="javascript: send_ajax('t6');" class="button fit"
+                >Add to Urban Diary</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <footer id="footer">
-        <div class="inner">
-            <h2>URBAN DIARY&nbsp;&nbsp;你的未來，你來記錄</h2>
-            <p class="copyright">
-                &copy; Untitled. Design: <a href="https://templated.co">&nbsp;TEMPLATED</a>
-                &nbsp;&nbsp; Source: <a href="https://www.travel.taipei">&nbsp;臺北旅遊網 TRAVEL TAIPEI</a>
-            </p>
-        </div>
+      <div class="inner">
+        <h2>URBAN DIARY&nbsp;&nbsp;你的未來，你來記錄</h2>
+        <p class="copyright">
+          &copy; Untitled. Design:
+          <a href="https://templated.co">&nbsp;TEMPLATED</a> &nbsp;&nbsp;
+          Source:
+          <a href="https://www.travel.taipei">&nbsp;臺北旅遊網 TRAVEL TAIPEI</a>
+        </p>
+      </div>
     </footer>
 
     <!-- Scripts -->
@@ -115,26 +149,24 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        function send_ajax(id) {
-            axios({
-                method: "post",
-                url: "./api/taipei_ajax.php",
-                data: {
-                    id: id,
-                }
-            })
-                .then(function (response) {
-                    console.log(response.data);
-                    setTimeout(function () {
-                        alert("Successfuly")
-                    }, 500);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-        }
-
+      function send_ajax(id) {
+        axios({
+          method: "post",
+          url: "./api/taipei_ajax.php",
+          data: {
+            id: id
+          }
+        })
+          .then(function(response) {
+            console.log(response.data);
+            setTimeout(function() {
+              alert("Successfuly");
+            }, 500);
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      }
     </script>
-</body>
-
+  </body>
 </html>
