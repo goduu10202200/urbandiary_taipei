@@ -19,46 +19,46 @@
     $longitude = "";
     switch ($id) {
         case "t1":
-            $time = "22:45";
-            $title = "2018臺北周末音樂不斷電";
-            $location = "臺北市松山文創園區文創大街";
-            $latitude = 25.044117;
-            $longitude = 121.5585953;
+            $time = "9:00";
+            $title = "2018 士林官邸菊展";
+            $location = "臺北市士林區士林官邸公園";
+            $latitude = 25.0983538;
+            $longitude = 121.5298217;
             break;
         case "t2":
-            $time = "22:45";
-            $title = "2018臺北溫泉季";
-            $location = "臺北市北投區北投溫泉博物館";
-            $latitude = 25.13679;
-            $longitude = 121.5049873;
+            $time = "10:00";
+            $title = "逆旅之域 The Flying Land";
+            $location = "忠泰美術館";
+            $latitude = 25.0442952;
+            $longitude = 121.535126;
             break;
         case "t3":
-            $time = "22:45";
-            $title = "關渡國際自然藝術季";
-            $location = "臺北市北投區關渡自然公園";
-            $latitude = 25.118957;
-            $longitude = 121.4687493;
+            $time = "9:00";
+            $title = "《Untitled》亞洲首個展";
+            $location = "臺北市大安區仁愛路四段25-1號9樓";
+            $latitude = 25.0382405;
+            $longitude = 121.5425993;
             break;
         case "t4":
-            $time = "22:45";
-            $title = "2018臺北海碩盃國際女子網球挑戰賽";
-            $location = "臺北市松山區臺北小巨蛋";
-            $latitude = 25.05155;
-            $longitude = 121.5475633;
+            $time = "9:00";
+            $title = "「土絡天地海」草山聯合創作展";
+            $location = "臺北市士林區凱旋路27號";
+            $latitude = 25.1363084;
+            $longitude = 121.54263;
             break;
         case "t5":
-            $time = "22:45";
-            $title = "2018士林官邸菊展";
-            $location = "臺北市士林區士林官邸公園";
-            $latitude = 25.1020745;
-            $longitude = 121.533718;
+            $time = "10:00";
+            $title = "「寂之守」陳秀雯創作個展";
+            $location = "臺北市中山區中山北路二段39巷3號B2";
+            $latitude = 25.0541778;
+            $longitude = 121.5220553;
             break;
         case "t6":
-            $time = "22:45";
-            $title = "2018臺北馬拉松";
-            $location = "臺北市信義區市民廣場";
-            $latitude = 25.0371169;
-            $longitude = 121.5609001;
+            $time = "11:30";
+            $title = "Long Time No Sebiro 好久不見穿西裝了你";
+            $location = "臺北市大同區南京西路241號 米凱樂啤酒吧";
+            $latitude = 25.0536831;
+            $longitude = 121.5079709;
             break;
     }
 
